@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D-Tec Moldes | Ferramentaria & Injeção Plástica - Limeira, SP</title>
+<meta name="description" content="Especialistas em ferramentaria de precisão, eletroerosão e moldes de injeção plástica em Limeira, SP. Mais de 15 anos de experiência.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f4f5f7;color:#1a1a2e;overflow-x:hidden;}
+
+/* TICKER */
+.tk{background:#c8102e;overflow:hidden;white-space:nowrap;padding:9px 0;}
+.tk-i{display:inline-block;animation:mq 28s linear infinite;}
+.tk-i span{font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#fff;padding:0 2rem;}
+.tk-i span.dot{color:rgba(255,255,255,.4);padding:0 .5rem;}
+@keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* NAV */
+nav{background:#0d1b3e;border-bottom:2px solid #c8102e;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:200;}
+.logo-wrap{display:flex;align-items:center;gap:12px;}
+.logo-svg{flex-shrink:0;}
+.logo-name{font-size:22px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#fff;line-height:1;}
+.logo-name b{color:#c8102e;font-weight:600;}
+.logo-sub{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.35);display:block;margin-top:2px;}
+.nav-r{display:flex;align-items:center;gap:2.5rem;}
+.nav-r a{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);text-decoration:none;cursor:pointer;transition:color .15s;}
+.nav-r a:hover{color:#fff;}
+.nav-btn{background:#c8102e;color:#fff;border:none;padding:10px 22px;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit;}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:24px;cursor:pointer;}
+
+/* HERO */
+.hero{position:relative;min-height:540px;display:flex;align-items:center;overflow:hidden;background:#0d1b3e;}
+.hero-geo{position:absolute;inset:0;}
+.hero-geo svg{width:100%;height:100%;opacity:.08;}
+.hero-accent{position:absolute;right:0;top:0;bottom:0;width:48%;background:#122150;clip-path:polygon(12% 0,100% 0,100% 100%,0 100%);}
+.hero-img-wrap{position:absolute;right:0;top:0;bottom:0;width:48%;overflow:hidden;}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover;filter:grayscale(60%) brightness(.35) sepia(.2);}
+.hero-img-wrap::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0d1b3e 0%,transparent 50%);z-index:1;}
+.hero-img-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(13,27,62,.9) 100%);z-index:1;}
+.hero-content{position:relative;z-index:2;padding:4rem 2.5rem;max-width:600px;}
+.ey{display:flex;align-items:center;gap:.75rem;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#c8102e;margin-bottom:1.25rem;}
+.ey::before{content:"";width:28px;height:1px;background:#c8102e;}
+h1.big{font-size:54px;font-weight:600;line-height:1.0;color:#fff;margin-bottom:1.5rem;}
+h1.big em{color:#c8102e;font-style:normal;}
+.hero-p{color:rgba(255,255,255,.5);font-size:14px;line-height:1.85;margin-bottom:2.25rem;max-width:440px;}
+.btns{display:flex;gap:1rem;}
+.b1{background:#c8102e;color:#fff;border:none;padding:14px 30px;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit;}
+.b2{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.15);padding:14px 30px;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:border-color .15s,color .15s;font-family:inherit;}
+.b2:hover{border-color:rgba(255,255,255,.4);color:#fff;}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:#0d1b3e;border-top:3px solid #c8102e;}
+.st{padding:2.25rem 1.5rem;text-align:center;border-right:1px solid rgba(255,255,255,.07);}
+.st:last-child{border-right:none;}
+.st-n{font-size:44px;font-weight:600;color:#fff;line-height:1;letter-spacing:-1px;}
+.st-n span{color:#c8102e;font-size:32px;}
+.st-l{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:.4rem;}
+
+/* SECTION */
+.sec{padding:5rem 2.5rem;border-bottom:1px solid #e0e2ea;}
+.sec.light{background:#f4f5f7;}
+.sec.navy{background:#0d1b3e;}
+.lbl{display:flex;align-items:center;gap:.75rem;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#c8102e;margin-bottom:.75rem;}
+.lbl::before{content:"";width:24px;height:1px;background:#c8102e;}
+h2.sh{font-size:36px;font-weight:600;line-height:1.1;margin-bottom:.75rem;}
+h2.sh.w{color:#fff;}
+h2.sh.d{color:#0d1b3e;}
+.sd{font-size:13px;line-height:1.85;max-width:540px;margin-bottom:3rem;}
+.sd.w{color:rgba(255,255,255,.5);}
+.sd.d{color:#666;}
+
+/* SERVICES GRID */
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d0d3de;border:1px solid #d0d3de;}
+.sc{background:#fff;padding:2.5rem 2rem;position:relative;overflow:hidden;cursor:default;transition:background .2s;}
+.sc:hover{background:#f8f9fc;}
+.sc-n{position:absolute;top:.75rem;right:1.25rem;font-size:72px;font-weight:600;color:#eceef4;line-height:1;pointer-events:none;}
+.sc-ico{font-size:30px;color:#c8102e;margin-bottom:1rem;}
+.sc-bar{width:28px;height:2px;background:#c8102e;margin-bottom:1rem;}
+.sc-t{font-size:15px;font-weight:600;color:#0d1b3e;margin-bottom:.6rem;}
+.sc-d{font-size:13px;color:#888;line-height:1.7;}
+.sc-full{grid-column:span 3;display:flex;align-items:center;gap:3rem;}
+.sc-full-num{font-size:72px;font-weight:600;color:#eceef4;line-height:1;flex-shrink:0;}
+
+/* PHOTO ROW */
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#d0d3de;border:1px solid #d0d3de;margin-top:3rem;}
+.ph{overflow:hidden;position:relative;height:260px;}
+.ph img{width:100%;height:100%;object-fit:cover;filter:brightness(.7);transition:filter .4s;display:block;}
+.ph:hover img{filter:brightness(.9);}
+.ph-cap{position:absolute;bottom:0;left:0;right:0;padding:1.25rem;background:linear-gradient(transparent,rgba(13,27,62,.9));}
+.ph-cap b{display:block;font-size:14px;color:#fff;font-weight:600;margin-bottom:2px;letter-spacing:1px;}
+.ph-cap span{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);}
+.ph-empty{background:#e8eaf0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;}
+.ph-empty i{font-size:32px;color:#c8c8d8;}
+.ph-empty span{font-size:11px;color:#b0b3c8;letter-spacing:2px;text-transform:uppercase;}
+
+/* MARQUEE 2 */
+.mq2{background:#0d1b3e;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);padding:1.2rem 0;overflow:hidden;white-space:nowrap;}
+.mq2-i{display:inline-block;animation:mq 35s linear infinite;}
+.mq2-i span{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);padding:0 2rem;}
+.mq2-i span.hi{color:#c8102e;}
+
+/* MISSION */
+.miss{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;}
+.miss-l{padding:5rem 3rem 5rem 2.5rem;border-right:1px solid #e0e2ea;}
+.miss-r{padding:5rem 2.5rem 5rem 3rem;background:#f8f9fc;display:flex;flex-direction:column;gap:1px;}
+.vl{padding:1.5rem 1.5rem 1.5rem 1.25rem;border-left:3px solid #c8102e;background:#fff;margin-bottom:1px;}
+.vl-t{font-size:13px;font-weight:600;color:#0d1b3e;margin-bottom:.3rem;}
+.vl-d{font-size:12px;color:#999;line-height:1.6;}
+.miss-p{color:#666;font-size:13px;line-height:1.9;margin-bottom:1.25rem;}
+.miss-p.alt{color:#999;}
+
+/* TESTIMONIALS */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d0d3de;border:1px solid #d0d3de;}
+.tc{background:#fff;padding:2.25rem 2rem;}
+.tc-s{color:#c8102e;letter-spacing:3px;font-size:12px;margin-bottom:1rem;}
+.tc-q{font-size:13px;color:#777;line-height:1.8;font-style:italic;margin-bottom:1.25rem;}
+.tc-sep{width:24px;height:1px;background:#c8102e;margin-bottom:1rem;}
+.tc-n{font-size:13px;font-weight:600;color:#0d1b3e;}
+.tc-c{font-size:11px;color:#bbb;margin-top:2px;}
+
+/* CTA BAND */
+.cta{background:#c8102e;padding:4.5rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
+.cta h2{font-size:30px;font-weight:600;color:#fff;line-height:1.2;margin-bottom:.4rem;}
+.cta p{color:rgba(255,255,255,.65);font-size:13px;}
+.bw{background:#fff;color:#c8102e;border:none;padding:15px 35px;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-weight:600;white-space:nowrap;font-family:inherit;}
+
+/* CONTACT */
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;}
+.ct-l{padding:5rem 3rem 5rem 2.5rem;border-right:1px solid #e0e2ea;background:#0d1b3e;}
+.ct-r{padding:5rem 2.5rem 5rem 3rem;}
+.ci{display:flex;gap:1.25rem;margin-bottom:2rem;}
+.ci-ico{color:#c8102e;font-size:22px;flex-shrink:0;margin-top:1px;}
+.ci-lb{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:4px;}
+.ci-v{font-size:14px;color:rgba(255,255,255,.7);line-height:1.5;}
+.ci-v a{color:inherit;text-decoration:none;}
+.fi{margin-bottom:.9rem;}
+.fi input,.fi textarea{width:100%;background:#f8f9fc;border:1px solid #e0e2ea;color:#0d1b3e;padding:12px 16px;font-size:13px;font-family:inherit;border-radius:0;}
+.fi input::placeholder,.fi textarea::placeholder{color:#bbb;}
+.fi input:focus,.fi textarea:focus{outline:none;border-color:#c8102e;}
+.fi textarea{height:88px;resize:none;}
+.fsub{width:100%;background:#c8102e;color:#fff;border:none;padding:14px;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;font-family:inherit;}
+.form-msg{font-size:12px;color:#0d1b3e;margin-top:.75rem;display:none;}
+
+/* FOOTER */
+footer{background:#0d1b3e;border-top:2px solid #c8102e;padding:4rem 2.5rem 2rem;}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);}
+.fb-name{font-size:20px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#fff;display:block;margin-bottom:1rem;}
+.fb-name b{color:#c8102e;font-weight:600;}
+.fb-sub{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.2);display:block;margin-top:-8px;margin-bottom:1rem;}
+.fb p{font-size:12px;color:rgba(255,255,255,.25);line-height:1.8;max-width:240px;}
+.fc h4{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#c8102e;margin-bottom:1.25rem;}
+.fc a{display:block;font-size:12px;color:rgba(255,255,255,.25);text-decoration:none;margin-bottom:.5rem;cursor:pointer;transition:color .15s;}
+.fc a:hover{color:#fff;}
+.fb-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.cp{font-size:11px;color:rgba(255,255,255,.15);}
+.sc-row{display:flex;gap:.75rem;}
+.sc-row a{color:rgba(255,255,255,.2);font-size:20px;cursor:pointer;text-decoration:none;transition:color .15s;}
+.sc-row a:hover{color:#c8102e;}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .nav-r{display:none;}
+  .nav-toggle{display:block;}
+  .nav-r.open{display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:#0d1b3e;padding:1.5rem 2.5rem;gap:1.25rem;border-bottom:2px solid #c8102e;}
+  h1.big{font-size:38px;}
+  .hero-accent,.hero-img-wrap{width:100%;opacity:.25;}
+  .hero-content{max-width:100%;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .st:nth-child(2){border-right:none;}
+  .st{border-bottom:1px solid rgba(255,255,255,.07);}
+  .sg{grid-template-columns:1fr;}
+  .sc-full{grid-column:span 1;flex-direction:column;align-items:flex-start;gap:1rem;}
+  .photo-row{grid-template-columns:1fr;}
+  .miss{grid-template-columns:1fr;}
+  .miss-l{border-right:none;border-bottom:1px solid #e0e2ea;}
+  .tg{grid-template-columns:1fr;}
+  .ct{grid-template-columns:1fr;}
+  .ct-l{border-right:none;}
+  .ft{grid-template-columns:1fr;gap:2rem;}
+  .cta{flex-direction:column;align-items:flex-start;}
+  .sec,.hero-content,.miss-l,.miss-r,.ct-l,.ct-r{padding-left:1.5rem;padding-right:1.5rem;}
+  nav{padding:0 1.5rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="tk">
+  <div class="tk-i">
+    <span>Eletroerosão a Penetração</span><span class="dot">◆</span>
+    <span>Eletroerosão a Fio</span><span class="dot">◆</span>
+    <span>Moldes de Injeção Plástica</span><span class="dot">◆</span>
+    <span>Ferramenta Estampo</span><span class="dot">◆</span>
+    <span>Medição Tridimensional</span><span class="dot">◆</span>
+    <span>Manutenção de Moldes</span><span class="dot">◆</span>
+    <span>Usinagem de Precisão</span><span class="dot">◆</span>
+    <span>Eletroerosão a Penetração</span><span class="dot">◆</span>
+    <span>Eletroerosão a Fio</span><span class="dot">◆</span>
+    <span>Moldes de Injeção Plástica</span><span class="dot">◆</span>
+    <span>Ferramenta Estampo</span><span class="dot">◆</span>
+    <span>Medição Tridimensional</span><span class="dot">◆</span>
+    <span>Manutenção de Moldes</span><span class="dot">◆</span>
+    <span>Usinagem de Precisão</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo-wrap">
+    <svg class="logo-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="21,3 39,12 39,30 21,39 3,30 3,12" fill="#122150" stroke="#c8102e" stroke-width="1.5"/>
+      <text x="21" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff" font-family="sans-serif">D</text>
+      <line x1="27" y1="21" x2="36" y2="21" stroke="#c8102e" stroke-width="2"/>
+    </svg>
+    <div>
+      <div class="logo-name">D<b>-TEC</b></div>
+      <span class="logo-sub">Moldes</span>
+    </div>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><i class="ti ti-menu-2"></i></button>
+  <div class="nav-r" id="navLinks">
+    <a onclick="scrollToId('servicos')">Serviços</a>
+    <a onclick="scrollToId('missao')">Sobre nós</a>
+    <a onclick="scrollToId('contato')">Contato</a>
+    <button class="nav-btn" onclick="scrollToId('contato')">Orçamento</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-geo">
+    <svg viewBox="0 0 700 540" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0" x2="700" y2="540" stroke="#c8102e" stroke-width=".6"/>
+      <line x1="0" y1="180" x2="520" y2="540" stroke="#fff" stroke-width=".4"/>
+      <line x1="140" y1="0" x2="700" y2="360" stroke="#fff" stroke-width=".3"/>
+      <line x1="350" y1="0" x2="350" y2="540" stroke="#c8102e" stroke-width=".4"/>
+      <rect x="1" y="1" width="698" height="538" fill="none" stroke="#c8102e" stroke-width=".6"/>
+    </svg>
+  </div>
+  <div class="hero-accent"></div>
+  <div class="hero-img-wrap">
+    <img src="https://dtecmoldes.com.br/gallery/molde%20capacete-ts1683814073.jpg" alt="Molde de injeção D-Tec Moldes">
+  </div>
+  <div class="hero-content">
+    <div class="ey">Ferramentaria & Injeção Plástica — Limeira, SP</div>
+    <h1 class="big">Precisão que<br><em>molda</em><br>o futuro.</h1>
+    <p class="hero-p">Soluções completas em ferramentaria industrial: eletroerosão, moldes de injeção plástica, medição tridimensional e muito mais. Mais de 15 anos servindo a indústria com excelência.</p>
+    <div class="btns">
+      <button class="b1" onclick="scrollToId('contato')">Solicitar orçamento</button>
+      <button class="b2" onclick="scrollToId('servicos')">Nossos serviços</button>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="st"><div class="st-n">15<span>+</span></div><div class="st-l">Anos de experiência</div></div>
+  <div class="st"><div class="st-n">7</div><div class="st-l">Serviços especializados</div></div>
+  <div class="st"><div class="st-n">5<span>★</span></div><div class="st-l">Avaliação no Google</div></div>
+  <div class="st"><div class="st-n">100<span>%</span></div><div class="st-l">Foco na qualidade</div></div>
+</div>
+
+<!-- SERVICES -->
+<section class="sec light" id="servicos">
+  <div class="lbl">Especialidades</div>
+  <h2 class="sh d">Serviços completos<br>em ferramentaria</h2>
+  <p class="sd d">Combinando equipamentos de última geração com equipe altamente especializada, entregamos soluções sob medida para a indústria de moldagem.</p>
+  <div class="sg">
+    <div class="sc"><div class="sc-n">01</div><div class="sc-ico"><i class="ti ti-bolt"></i></div><div class="sc-bar"></div><div class="sc-t">Eletroerosão a penetração</div><div class="sc-d">Usinagem por descargas elétricas controladas para criação de geometrias complexas em materiais condutores com precisão incomparável.</div></div>
+    <div class="sc"><div class="sc-n">02</div><div class="sc-ico"><i class="ti ti-cut"></i></div><div class="sc-bar"></div><div class="sc-t">Eletroerosão a fio</div><div class="sc-d">Corte preciso com fio condutor para peças de geometria complexa. Tolerâncias rigorosas para as aplicações mais exigentes do setor.</div></div>
+    <div class="sc"><div class="sc-n">03</div><div class="sc-ico"><i class="ti ti-3d-cube-sphere"></i></div><div class="sc-bar"></div><div class="sc-t">Moldes de injeção plástica</div><div class="sc-d">Ferramental completo para produção em série de peças plásticas com alta consistência dimensional e reprodução fiel do produto final.</div></div>
+    <div class="sc"><div class="sc-n">04</div><div class="sc-ico"><i class="ti ti-adjustments"></i></div><div class="sc-bar"></div><div class="sc-t">Ferramenta estampo</div><div class="sc-d">Dispositivos para cortar, perfurar e dar forma a materiais metálicos. Alta precisão e repetibilidade para produção eficiente de componentes.</div></div>
+    <div class="sc"><div class="sc-n">05</div><div class="sc-ico"><i class="ti ti-ruler-measure"></i></div><div class="sc-bar"></div><div class="sc-t">Medição tridimensional</div><div class="sc-d">Avaliação precisa em 3 eixos (x, y, z) com máquinas MMC. Verificação e controle de qualidade com conformidade total às especificações.</div></div>
+    <div class="sc"><div class="sc-n">06</div><div class="sc-ico"><i class="ti ti-tools"></i></div><div class="sc-bar"></div><div class="sc-t">Manutenção de moldes</div><div class="sc-d">Atividades preventivas e corretivas para garantir durabilidade dos moldes: limpeza, reparo, ajustes e substituição de componentes.</div></div>
+    <div class="sc sc-full">
+      <div class="sc-full-num">07</div>
+      <div>
+        <div class="sc-ico"><i class="ti ti-flame"></i></div>
+        <div class="sc-bar"></div>
+        <div class="sc-t">Serviços de injeção de plástico</div>
+        <div class="sc-d" style="max-width:660px;">Processo industrial de moldagem em que o plástico derretido é injetado em um molde, solidificando-se para formar peças com alta precisão, eficiência e qualidade — produção em série para diversos setores industriais.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO ROW -->
+  <div class="photo-row">
+    <div class="ph">
+      <img src="https://dtecmoldes.com.br/gallery/molde%20capacete-ts1683814073.jpg" alt="Molde capacete D-Tec Moldes">
+      <div class="ph-cap"><b>Molde de injeção</b><span>Capacete industrial</span></div>
+    </div>
+    <div class="ph ph-empty">
+      <i class="ti ti-photo-plus"></i>
+      <span>Galeria em breve</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE 2 -->
+<div class="mq2">
+  <div class="mq2-i">
+    <span>Alta precisão dimensional</span><span class="hi">◆</span>
+    <span>Máquinas de última geração</span><span class="hi">◆</span>
+    <span>Equipe especializada</span><span class="hi">◆</span>
+    <span>Entrega no prazo</span><span class="hi">◆</span>
+    <span>Projetos complexos</span><span class="hi">◆</span>
+    <span>Soluções sob medida</span><span class="hi">◆</span>
+    <span>Alta precisão dimensional</span><span class="hi">◆</span>
+    <span>Máquinas de última geração</span><span class="hi">◆</span>
+    <span>Equipe especializada</span><span class="hi">◆</span>
+    <span>Entrega no prazo</span><span class="hi">◆</span>
+    <span>Projetos complexos</span><span class="hi">◆</span>
+    <span>Soluções sob medida</span><span class="hi">◆</span>
+  </div>
+</div>
+
+<!-- MISSION -->
+<div class="miss" id="missao">
+  <div class="miss-l">
+    <div class="lbl">Quem somos</div>
+    <h2 class="sh d">Inovação e excelência<br>em cada projeto</h2>
+    <p class="miss-p">Na D-Tec Moldes, fornecemos soluções de moldagem impulsionadas por tecnologia avançada e expertise técnica consolidada. Superamos expectativas e contribuímos ativamente para o sucesso de cada cliente.</p>
+    <p class="miss-p alt">Investimos continuamente em atualização do parque de máquinas e capacitação da equipe para estar sempre na vanguarda do setor, construindo parcerias duradouras baseadas em ética e comprometimento.</p>
+    <p class="miss-p alt">Além dos serviços de moldagem, oferecemos suporte técnico e consultoria especializada, auxiliando nossos clientes a otimizarem seus processos e alcançarem melhores resultados.</p>
+  </div>
+  <div class="miss-r">
+    <div class="vl"><div class="vl-t">Tecnologia avançada</div><div class="vl-d">Parque de máquinas de última geração, constantemente atualizado para os projetos mais exigentes.</div></div>
+    <div class="vl"><div class="vl-t">Alta precisão dimensional</div><div class="vl-d">Tolerâncias mínimas garantidas em cada peça, sem concessões à qualidade do produto final.</div></div>
+    <div class="vl"><div class="vl-t">Equipe especializada</div><div class="vl-d">Profissionais experientes e capacitados para solucionar os desafios mais complexos.</div></div>
+    <div class="vl"><div class="vl-t">Prazo e confiabilidade</div><div class="vl-d">Entregas eficientes com total comprometimento com o cronograma acordado com o cliente.</div></div>
+    <div class="vl"><div class="vl-t">Suporte técnico</div><div class="vl-d">Consultoria especializada para otimização de processos e resolução de desafios técnicos.</div></div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="sec light">
+  <div class="lbl">Depoimentos</div>
+  <h2 class="sh d">O que nossos clientes dizem</h2>
+  <div class="tg">
+    <div class="tc"><div class="tc-s">★★★★★</div><p class="tc-q">"Empresa super qualificada com diretor e profissionais excelentes, máquinas de última geração e alta precisão. Especialista em ferramentaria com foco em moldes para injeção plástica. Mega recomendo!"</p><div class="tc-sep"></div><div class="tc-n">David Zanetti</div><div class="tc-c">Cliente D-Tec Moldes</div></div>
+    <div class="tc"><div class="tc-s">★★★★★</div><p class="tc-q">"Empresa muito boa, profissionais capacitados, máquinas modernas e ótimo atendimento. O Sr. Edson é muito atencioso e competente. Recomendo a todos sem hesitar."</p><div class="tc-sep"></div><div class="tc-n">Rafael Lavoura</div><div class="tc-c">Cliente D-Tec Moldes</div></div>
+    <div class="tc"><div class="tc-s">★★★★★</div><p class="tc-q">"Pessoal super capacitado para solucionar dúvidas quanto à injeção plástica e na área de ferramentaria. Atendimento excelente e muito profissional em todos os momentos."</p><div class="tc-sep"></div><div class="tc-n">Rota Capacete</div><div class="tc-c">Cliente D-Tec Moldes</div></div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta">
+  <div><h2>Pronto para o seu próximo projeto?</h2><p>Fale com nossa equipe e receba um orçamento personalizado, sem compromisso.</p></div>
+  <button class="bw" onclick="scrollToId('contato')">Falar com a equipe →</button>
+</div>
+
+<!-- CONTACT -->
+<div class="ct" id="contato">
+  <div class="ct-l">
+    <div class="lbl">Fale conosco</div>
+    <h2 class="sh w">Entre em<br>contato</h2>
+    <div style="margin-top:2.5rem;">
+      <div class="ci"><i class="ti ti-map-pin ci-ico"></i><div><div class="ci-lb">Endereço</div><div class="ci-v">Av. Rio Claro, 166<br>Limeira — SP</div></div></div>
+      <div class="ci"><i class="ti ti-phone ci-ico"></i><div><div class="ci-lb">Telefone</div><div class="ci-v"><a href="tel:+551934421573">(19) 3442-1573</a></div></div></div>
+      <div class="ci"><i class="ti ti-mail ci-ico"></i><div><div class="ci-lb">E-mail</div><div class="ci-v"><a href="mailto:contato@dtecmoldes.com.br">contato@dtecmoldes.com.br</a></div></div></div>
+      <div class="ci"><i class="ti ti-brand-instagram ci-ico"></i><div><div class="ci-lb">Instagram</div><div class="ci-v"><a href="https://instagram.com/dtec_moldes" target="_blank" rel="noopener">@dtec_moldes</a></div></div></div>
+      <div class="ci"><i class="ti ti-brand-facebook ci-ico"></i><div><div class="ci-lb">Facebook</div><div class="ci-v"><a href="https://facebook.com/dtecmoldes" target="_blank" rel="noopener">facebook.com/dtecmoldes</a></div></div></div>
+    </div>
+  </div>
+  <div class="ct-r">
+    <form id="contactForm" onsubmit="handleSubmit(event)" style="padding-top:1rem;">
+      <div class="fi"><input type="text" name="nome" placeholder="Nome completo" required></div>
+      <div class="fi"><input type="email" name="email" placeholder="E-mail" required></div>
+      <div class="fi"><input type="tel" name="telefone" placeholder="Telefone / WhatsApp"></div>
+      <div class="fi"><input type="text" name="empresa" placeholder="Empresa (opcional)"></div>
+      <div class="fi"><input type="text" name="servico" placeholder="Serviço de interesse"></div>
+      <div class="fi"><textarea name="mensagem" placeholder="Descreva seu projeto ou dúvida..." required></textarea></div>
+      <button type="submit" class="fsub">Enviar mensagem</button>
+      <div class="form-msg" id="formMsg">Obrigado pelo contato! Para enviar de fato, este formulário precisa ser conectado a um serviço de e-mail (ex: Formspree, EmailJS) ou a um back-end.</div>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div class="fb">
+      <span class="fb-name">D<b>-TEC</b></span>
+      <span class="fb-sub">Moldes</span>
+      <p>Especialistas em ferramentaria de precisão, eletroerosão e moldes de injeção plástica em Limeira, São Paulo.</p>
+    </div>
+    <div class="fc">
+      <h4>Serviços</h4>
+      <a onclick="scrollToId('servicos')">Eletroerosão a penetração</a>
+      <a onclick="scrollToId('servicos')">Eletroerosão a fio</a>
+      <a onclick="scrollToId('servicos')">Moldes de injeção</a>
+      <a onclick="scrollToId('servicos')">Ferramenta estampo</a>
+      <a onclick="scrollToId('servicos')">Medição tridimensional</a>
+      <a onclick="scrollToId('servicos')">Manutenção de moldes</a>
+    </div>
+    <div class="fc">
+      <h4>Empresa</h4>
+      <a onclick="scrollToId('missao')">Sobre nós</a>
+      <a onclick="scrollToId('servicos')">Serviços</a>
+      <a onclick="scrollToId('contato')">Contato</a>
+    </div>
+    <div class="fc">
+      <h4>Contato</h4>
+      <a href="tel:+551934421573">(19) 3442-1573</a>
+      <a href="mailto:contato@dtecmoldes.com.br">contato@dtecmoldes.com.br</a>
+      <a>Av. Rio Claro, 166</a>
+      <a>Limeira — SP</a>
+    </div>
+  </div>
+  <div class="fb-bot">
+    <div class="cp">© 2026 D-Tec Moldes · Todos os direitos reservados</div>
+    <div class="sc-row">
+      <a href="https://facebook.com/dtecmoldes" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+      <a href="https://instagram.com/dtec_moldes" target="_blank" rel="noopener" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+      <a href="https://wa.me/5519999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function scrollToId(id){
+  var el = document.getElementById(id);
+  if(el){ el.scrollIntoView({behavior:'smooth'}); }
+  document.getElementById('navLinks').classList.remove('open');
+}
+document.getElementById('navToggle').addEventListener('click', function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+function handleSubmit(e){
+  e.preventDefault();
+  document.getElementById('formMsg').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
